@@ -1,0 +1,163 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+.input_wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.input_button {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    width: 15px;
+    font-size: 12px; /* TODO: сделать адаптивно */
+    cursor: default;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.input_button:focus {
+    outline: 0
+}
+
+.input_modal {
+    font-family: 'Segoe UI', sans-serif;
+    position: absolute;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px #c4c4c4;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.input_dark {
+    color: #fff;
+    background-color: rgb(54, 53, 53);
+    border: solid 1px #000;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.input_dark .category_title {
+    background-color:  rgb(54, 53, 53);
+    box-shadow: 0 5px 5px rgb(54, 53, 53);
+}
+
+.input_dark .search-input {
+    background-color:  rgb(90, 89, 89);
+    color: white;
+}
+
+
+.input_dark .search-input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navigation {
+    border-bottom: solid 1px #c4c4c4;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-bottom: 10px;
+}
+
+.navigation-item {
+    margin: 0;
+    padding: 5px 2px;
+    box-shadow: none;
+    background: none;
+    border: none;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    transition: .2s background-color;
+}
+
+.navigation-item:hover {
+    background-color: #c4c4c4;
+}
+
+.navigation-item:focus { 
+    outline: 0 
+}
+
+.search {
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    border-radius: 3px;
+    border: solid 1px #c4c4c4;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.search-input:focus { 
+    outline: 0 
+}
+
+.content {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.category{
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.category_title {
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 2px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 5px 5px white;
+}
+
+.category_list {
+    padding: 0;
+    margin: 0 -2px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.category_item {
+    list-style: none;
+    padding: 2px;
+    cursor: default;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: .2s background-color;
+}
+
+.category_item:hover {
+    background-color: #c4c4c4;
+}
+
+.hide {
+    display: none;
+}
