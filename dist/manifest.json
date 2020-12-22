@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Енот",
-  "description": "Енотит",
-  "version": "0.0",
+  "name": "emojiWidget",
+  "description": "An extension that adds a widget with emoticons to the page",
+  "version": "1.0",
   "browser_action": {
     "default_icon": "raccoon.png",
-    "default_title": "Енот"
+    "default_title": "Emoji widget"
   },
 
   "icons": {
