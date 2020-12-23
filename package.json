@@ -11,7 +11,7 @@
   "author": "me",
   "license": "ISC",
   "dependencies": {
-    "emojiwidget": "^1.0.10"
+    "emojiwidget": "^1.0.12"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
